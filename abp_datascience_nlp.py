@@ -436,8 +436,8 @@ class KoBertTokenizer(PreTrainedTokenizer):
                 self.token2idx[token] = idx
                 self.idx2token.append(token)
 
-        self.max_len_single_sentence = self.max_len - 2  # take into account special tokens
-        self.max_len_sentences_pair = self.max_len - 3  # take into account special tokens
+        #self.max_len_single_sentence = self.max_len - 2  # take into account special tokens
+        #self.max_len_sentences_pair = self.max_len - 3  # take into account special tokens
 
         try:
             import sentencepiece as spm
