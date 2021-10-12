@@ -1,0 +1,12 @@
+numpy
+IPython
+flask
+flask_restful
+flask_restplus
+pandas
+transformers
+sklearn
+matplotlib
+tqdm
+Werkzeug==0.16.1
+torch
