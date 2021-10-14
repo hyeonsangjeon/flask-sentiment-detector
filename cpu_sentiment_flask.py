@@ -20,7 +20,7 @@ from abp_datascience_nlp import KoBertTokenizer, create_sentiment_bert,  mean_an
 
 #strategy = tf.distribute.MirroredStrategy()
 strategy = tf.distribute.MirroredStrategy(devices=["/gpu:0"], cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
-filename = './data/fsi_comment_sentiment_model.h5.h5'
+filename = './data/fsi_comment_sentiment_model.h5'
 
 with strategy.scope():
     sentiment_model = create_sentiment_bert(learning_rate=0.000001, SEQ_LEN=32, DROPOUT=0.01, OUTPUT_CNT=1, loss_type='BinaryCrossentropy')

@@ -10,3 +10,4 @@ matplotlib
 tqdm
 Werkzeug==0.16.1
 torch
+sentencepiece
