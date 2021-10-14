@@ -10,8 +10,4 @@ matplotlib
 tqdm
 Werkzeug==0.16.1
 torch
-<<<<<<< HEAD
 sentencepiece
-=======
-sentencepiece
->>>>>>> 535977f04f9b692b707c6f69277eb4736b1221b3
